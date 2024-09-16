@@ -767,6 +767,10 @@ input[type="submit"] {
     .countdown-item{
         width: 20%;
     }
+    .countdown-sec p {
+        font-size: 20px;
+        margin-top: -20px;
+    }
 
    
 
