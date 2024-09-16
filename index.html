@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core42</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <section class="coming-hero">
+        <div class="background-video">
+            <video autoplay muted loop playsinline id="desktop-video" poster="images/desktop-poster.png">
+                
+                <source src="images/desktop-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <video autoplay muted loop playsinline id="mobile-video" poster="images/mobile-poster.png">
+               
+                <source src="images/mobile-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+       
+
+        <div class="video-content">
+            <div class="video-container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="bottom-logo">
+                    <img src="images/logo-bottom.png" alt="">
+                </div>
+                <div class="video-text">
+                    <h1>Core42 at GITEX</h1>
+                    <p>Register now to receive updates on our sessions and learn how to efficiently build, tune, and run AI solutions through our digital infrastructure.</p>
+                    <div class="gobal-btn">
+                        <a href="#" id="openPopup">Register now</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <div class="countdown-sec">
+        <div class="container">
+            <p>Unveiling AI Innovation in  </p>
+         <div class="countdown-container">
+             <div class="countdown-item">
+                 <svg>
+                     <circle r="50" cx="60" cy="60"></circle>
+                     <circle id="days-circle" class="progress" r="50" cx="60" cy="60"></circle>
+                 </svg>
+                 <div class="time">
+                     <span id="days" class="time-number">00</span>
+                     <span class="label">Days</span>
+                 </div>
+             </div>
+             <div class="countdown-item">
+                 <svg>
+                     <circle r="50" cx="60" cy="60"></circle>
+                     <circle id="hours-circle" class="progress" r="50" cx="60" cy="60"></circle>
+                 </svg>
+                 <div class="time">
+                     <span id="hours" class="time-number">00</span>
+                     <span class="label">Hours</span>
+                 </div>
+             </div>
+             <div class="countdown-item">
+                 <svg>
+                     <circle r="50" cx="60" cy="60"></circle>
+                     <circle id="minutes-circle" class="progress" r="50" cx="60" cy="60"></circle>
+                 </svg>
+                 <div class="time">
+                     <span id="minutes" class="time-number">00</span>
+                     <span class="label">Minutes</span>
+                 </div>
+             </div>
+             <div class="countdown-item">
+                 <svg>
+                     <circle r="50" cx="60" cy="60"></circle>
+                     <circle id="seconds-circle" class="progress" r="50" cx="60" cy="60"></circle>
+                 </svg>
+                 <div class="time">
+                     <span id="seconds" class="time-number">00</span>
+                     <span class="label">Seconds</span>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </div>
+
+    <div class="footer">
+        <div class="footer-conteiner">
+            <div class="footer-box">
+                <div class="footer-icon">
+                    <p>Follow Us :</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/core42ai/"><img src="images/icon2.svg" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/core42ai/"><img src="images/insta.svg" alt=""></a></li>
+                        <li><a href="https://x.com/core42_ai"><img src="images/icon3.svg" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/Core42ai/"><img src="images/icon4.svg" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/@Core42ai"><img src="images/icon5.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer-copright">
+                    <img src="images/logo.svg" alt="">
+                    <ul>
+                        <li><a href="https://careers-core42.icims.com/">Careers</a> </li>
+                        <li><a href="https://core42.ai/cookie-policy.html">Cookie Policy</a> </li>
+                        <li><a href="https://core42.ai/privacy-notice.html">Privacy Notice</a> </li>
+                        <li><a href="https://core42.ai/terms-of-use.html">Terms of Use</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupForm" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Enter your details</h2>
+            <form id="form">
+                
+                <input type="text" id="name" name="name" required placeholder="Name">
+                <input type="email" id="email" name="email" required placeholder="Email">                
+                <input type="text" id="company" name="company" required placeholder="Company Name">
+                <select id="services" name="services" required>
+                    <option value="" >Select a service</option>
+                    <option value="cloud">Compass</option>
+                    <option value="cloud">Sovereign Public Cloud</option>
+                    <option value="cloud">AI infrastructure</option>
+                    <option value="cloud">Signature Private Cloud</option>
+                    <option value="web">Digital Services
+                    </option>
+                    <option value="seo">Others</option>
+                </select>
+
+                
+
+                <label class="trem">
+                    <input type="checkbox" id="terms" name="terms" required checked>
+                    I agree to the <a href="https://core42.ai/privacy-notice.html">Terms and Conditions and Privacy Policy</a>.
+                </label>
+
+                <input type="submit" value="Submit"></input>
+            </form>
+        </div>
+    </div>
+
+    <div  class=" thankyou-popup">
+        <div class="thank-content">
+            <span class="close-button2">&times;</span>
+            <h2>Thank you! </h2>
+            <p>Thank you for registering! We will keep you posted on the updates.
+            </p>
+           <p style="margin:27px 0px 10px 0px;text-align:center;font-size:17px;line-height:150%;color:#000;font-weight:bold;">Add event to calendar</p><p style="margin:0px 0px 10px 0px;text-align:center;font-size:0px;"><a href="https://www.addevent.com/event/nN22942875+apple" title="Apple" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-apple-t1.png" alt="Apple" width="35" border="0" style="width:35px;display:inline;" /></a><a href="https://www.addevent.com/event/nN22942875+google" title="Google" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-google-t1.png" alt="Google" width="35" border="0" style="width:35px;display:inline;" /></a><a href="https://www.addevent.com/event/nN22942875+office365" title="Office 365" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-office365-t1.png" alt="Office 365" width="35" border="0" style="width:35px;display:inline;" /></a><a href="https://www.addevent.com/event/nN22942875+outlook" title="Outlook" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-outlook-t1.png" alt="Outlook" width="35" border="0" style="width:35px;display:inline;" /></a><a href="https://www.addevent.com/event/nN22942875+outlookcom" title="Outlook.com" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-outlookcom-t1.png" alt="Outlook.com" width="35" border="0" style="width:35px;display:inline;" /></a><a href="https://www.addevent.com/event/nN22942875+yahoo" title="Yahoo" target="_blank"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-yahoo-t1.png" alt="Yahoo" width="35" border="0" style="width:35px;display:inline;" /></a></p><p style="margin:0;padding:25px 0px 0px 0px;text-align:center;"><a href="https://www.addevent.com/?utm_source=event&utm_medium=atclinks&utm_id=plg" target="_blank" style="font-weight:normal;color:#125ef8;text-decoration:underline;"><img src="https://cdn.addevent.com/web/images/logo-email-plain-fff-t1.png" alt="" width="129" height="15" style="width:129px;height:15px;display:inline;" /></a></p>
+        </div>
+    </div>
+    
+
+
+   
+
+    <script src="js/main.js"></script>
+</body>
+</html>
