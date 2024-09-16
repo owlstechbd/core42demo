@@ -63,6 +63,7 @@ video {
 
 }
 
+
 #desktop-video {
     display: block;
 }
@@ -98,7 +99,7 @@ video {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    height: 75vh;
+    height: 80vh;
 
 }
 
@@ -640,7 +641,7 @@ input[type="submit"] {
     }
 
     .video-container {
-        height: 80vh;
+        height: 75vh;
     }
 
     .countdown-sec {
