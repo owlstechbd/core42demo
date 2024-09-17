@@ -909,86 +909,85 @@ input[type="submit"] {
 
 
 
+/* Ensure that the video height is adaptive and doesn't overflow the screen */
 @media only screen and (max-width: 768px) {
     .coming-hero, .video-container {
-        height: calc(100vh - 20vh); /* Dynamic height to fit countdown in first fold */
+        height: calc(100vh - 20vh); /* Adjusts height so countdown fits within first fold */
+        overflow: hidden; /* Prevent overflow */
     }
 
-    /* Countdown adjustments */
+    /* Ensure that the countdown fits in the first fold */
     .countdown-sec {
-        height: 20vh;
-        padding-top: 10px;
-        display: flex;
+        height: 20vh; /* Ensures countdown takes up a portion of the first fold */
+        padding: 0; 
+        display: block;
+        align-items: start;
         justify-content: center;
-        align-items: center;
     }
 
     .countdown-item {
-        width: 25%;
+        width: 20%; /* Makes the countdown items smaller for better fit */
     }
 
     .time-number {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduces font size to avoid cutting */
     }
 
     .countdown-sec p {
-        font-size: 18px;
+        
+        margin-bottom: 5px; /* Reduce unnecessary margin */
     }
 
-    /* Ensure text is responsive */
-    .video-text h1 {
-        font-size: 36px;
-    }
 
-    .video-text p {
-        font-size: 16px;
-    }
+
+    
 
     .video-text a {
-        font-size: 16px;
-        padding: 10px 20px;
+        padding: 10px 15px; /* Adjust button padding for smaller screens */
+        font-size: 14px;
     }
 
     .footer-copright ul li {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    .footer-copright ul{
-        flex-wrap: wrap;
+        font-size: 12px; /* Adjust footer text size */
     }
 }
 
-/* Further adjustments for smaller devices */
+/* Further adjustments for iPhone and smaller screens */
 @media only screen and (max-width: 480px) {
     .coming-hero, .video-container {
-        height: 75vh;
-    }
-
-    .countdown-item {
-        width: 20%;
-    }
-
-    .time-number {
-        font-size: 1rem;
-    }
-}
-
-/* Very small screens */
-@media only screen and (max-width: 320px) {
-    .coming-hero, .video-container {
-        height: 100vh;
+        height: calc(100vh - 25vh); /* Extra space for countdown on very small devices */
     }
 
     .countdown-sec {
-        height: auto;
-        padding: 40px 0;
+        height: 25vh; /* Increase height slightly to accommodate countdown */
     }
 
     .countdown-item {
-        width: 30%;
+        width: 20%; /* Further reduce item size */
     }
 
     .time-number {
-        font-size: 1rem;
+        font-size: 1rem; /* Smaller font size to prevent cutting */
+    }
+
+ 
+}
+
+/* For very small screens like iPhone SE or similar */
+@media only screen and (max-width: 320px) {
+    .coming-hero, .video-container {
+        height: calc(100vh - 30vh); /* Further reduction to allow countdown in fold */
+    }
+
+    .countdown-item {
+        width: 30%; /* Make countdown items smaller for smaller devices */
+    }
+
+    .time-number {
+        font-size: 0.9rem; /* Small font size for countdown numbers */
+    }
+
+    .countdown-sec p {
+        font-size: 14px; /* Smaller font for the main countdown label */
     }
 }
