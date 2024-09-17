@@ -690,12 +690,13 @@ input[type="submit"] {
     }
 
     .video-text h1 {
-        font-size: 35px;
-        font-weight: 6 00;
+        font-size: 40px;
     }
 
     .video-text p {
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 15px 20px 0;
     }
 
     .video-text h4 {
@@ -745,10 +746,16 @@ input[type="submit"] {
     }
 
     .bottom-logo img {
-        width: 140px;
+        width: auto;
     }
 
-    
+    .gradient-text {
+        background: linear-gradient(to bottom, white, #00D6A8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
 
     .footer-copright {
         text-align: center;
@@ -796,13 +803,13 @@ input[type="submit"] {
 
     .time-number{
         
-        font-size: 20px!important;
+        font-size: 35px!important;
     }
     .countdown-item{
         width: 20%;
     }
     .countdown-sec p {
-        font-size: 20px;
+        font-size: 30px;
         
     }
 
