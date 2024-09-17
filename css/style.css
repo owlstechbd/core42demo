@@ -749,13 +749,7 @@ input[type="submit"] {
         width: auto;
     }
 
-    .gradient-text {
-        background: linear-gradient(to bottom, white, #00D6A8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-    }
+
 
     .footer-copright {
         text-align: center;
@@ -879,4 +873,12 @@ input[type="submit"] {
 .popupControl.hide {
     display: none;
     opacity: 0;
+}
+
+.gradient-text {
+    background: linear-gradient(to bottom, white, #00D6A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
