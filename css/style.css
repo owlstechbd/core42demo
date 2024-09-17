@@ -627,7 +627,9 @@ input[type="submit"] {
 .for-phone{
     display: none;
 }
-
+.footer-copright ul li:last-child::after {
+    display: none;
+}
 
 
 @media (min-width: 1600px) and (max-width: 5000px) {
@@ -682,9 +684,9 @@ input[type="submit"] {
     .countdown-sec {
         padding: 0;
         padding-top: 10px;
-        align-items: start;
+       
         height: 20vh;
-        display: flex;
+        display: block;
         justify-content: center;
         flex-direction: column;
     }
@@ -923,9 +925,10 @@ input[type="submit"] {
     .countdown-sec {
         height: 20vh; /* Ensures countdown takes up a portion of the first fold */
         padding: 0; 
-        display: flex;
+        display: block;
         align-items: start;
         justify-content: center;
+        padding-top: 10px;
     }
     .footer{
         border: none;
