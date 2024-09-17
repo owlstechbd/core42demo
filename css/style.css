@@ -951,6 +951,10 @@ input[type="submit"] {
 
     .footer-copright ul li {
         font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .footer-copright ul{
+        flex-wrap: wrap;
     }
 }
 
