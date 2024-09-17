@@ -22,6 +22,9 @@
     box-sizing: border-box;
     font-family: 'Publica Sans';
 }
+body {
+    background: #181b19;
+}
 
 
 ul li {
@@ -681,7 +684,7 @@ input[type="submit"] {
         padding-top: 10px;
         align-items: start;
         height: 20vh;
-        display: block;
+        display: flex;
         justify-content: center;
         flex-direction: column;
     }
@@ -819,7 +822,7 @@ input[type="submit"] {
 
     .time-number{
         
-        font-size: 25px!important;
+        font-size: 30px!important;
     }
     .countdown-item{
         width: 20%;
@@ -920,9 +923,15 @@ input[type="submit"] {
     .countdown-sec {
         height: 20vh; /* Ensures countdown takes up a portion of the first fold */
         padding: 0; 
-        display: block;
+        display: flex;
         align-items: start;
         justify-content: center;
+    }
+    .footer{
+        border: none;
+        margin-top: 0px;
+        padding: 0 0 10px;
+        margin-top: 0;
     }
 
     .countdown-item {
