@@ -164,7 +164,7 @@ video {
 
 .gobal-btn {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 460px;
     z-index: 99999;
     position: relative;
 }
@@ -697,7 +697,7 @@ input[type="submit"] {
         display: block;
     }
     .gobal-btn{
-        margin-top: 40px;
+        margin-top: 60px;
     }
 }
 
@@ -725,7 +725,7 @@ input[type="submit"] {
         font-size: 14px;
     }
     .bottom-logo-phone{
-        padding: 45px 0 0;
+        padding: 65px 0 0;
     }
     .bottom-logo-phone img{
         max-width: 160px;
@@ -838,25 +838,9 @@ input[type="submit"] {
 
 }
 
-@media only screen and (max-width: 421px) {
-   
-
-}
 
 
-@media only screen and (max-width: 375px) {
 
-
-    .footer-copright ul li::after {
-        right: -7px;
-    }
-
-    .bottom-logo {
-
-        bottom: 40px;
-    }
-
-}
 
 @media only screen and (max-width: 320px) {
     .background-video {
@@ -955,7 +939,7 @@ input[type="submit"] {
     
 
     .video-text a {
-        padding: 10px 15px; /* Adjust button padding for smaller screens */
+        padding: 18px 35px; /* Adjust button padding for smaller screens */
         font-size: 14px;
     }
 
@@ -1002,4 +986,20 @@ input[type="submit"] {
     .countdown-sec p {
         font-size: 14px; /* Smaller font for the main countdown label */
     }
+}
+@media only screen and (max-width: 375px) {
+
+
+    .footer-copright ul li::after {
+        right: -7px;
+    }
+
+    .bottom-logo {
+
+        bottom: 40px;
+    }
+    .coming-hero, .video-container , .background-video{
+        height: 100vh;
+    }
+
 }
