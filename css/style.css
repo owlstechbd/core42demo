@@ -680,7 +680,7 @@ input[type="submit"] {
         padding: 0;
         padding-top: 10px;
         align-items: start;
-        height: 25vh;
+        height: 20vh;
         display: block;
         justify-content: center;
         flex-direction: column;
@@ -819,13 +819,13 @@ input[type="submit"] {
 
     .time-number{
         
-        font-size: 35px!important;
+        font-size: 25px!important;
     }
     .countdown-item{
         width: 20%;
     }
     .countdown-sec p {
-        font-size: 30px;
+        font-size: 25px;
         
     }
 
@@ -903,4 +903,88 @@ input[type="submit"] {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .coming-hero, .video-container {
+        height: calc(100vh - 20vh); /* Dynamic height to fit countdown in first fold */
+    }
+
+    /* Countdown adjustments */
+    .countdown-sec {
+        height: 20vh;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countdown-item {
+        width: 25%;
+    }
+
+    .time-number {
+        font-size: 1.2rem;
+    }
+
+    .countdown-sec p {
+        font-size: 18px;
+    }
+
+    /* Ensure text is responsive */
+    .video-text h1 {
+        font-size: 36px;
+    }
+
+    .video-text p {
+        font-size: 16px;
+    }
+
+    .video-text a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-copright ul li {
+        font-size: 14px;
+    }
+}
+
+/* Further adjustments for smaller devices */
+@media only screen and (max-width: 480px) {
+    .coming-hero, .video-container {
+        height: 75vh;
+    }
+
+    .countdown-item {
+        width: 20%;
+    }
+
+    .time-number {
+        font-size: 1rem;
+    }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 320px) {
+    .coming-hero, .video-container {
+        height: 100vh;
+    }
+
+    .countdown-sec {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .countdown-item {
+        width: 30%;
+    }
+
+    .time-number {
+        font-size: 1rem;
+    }
 }
