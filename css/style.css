@@ -44,7 +44,7 @@ a:hover {
 .background-video {
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 75vh;
     overflow: hidden;
     z-index: -1;
 
@@ -99,12 +99,15 @@ video {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    height: 80vh;
+    height: 75vh;
 
 }
 
 .logo {
     padding: 40px 0;
+}
+.logo img{
+    width: 13.542vw;
 }
 
 .bottom-logo {
@@ -115,12 +118,16 @@ video {
 
 .video-text {
     color: #fff;
-    max-width: 540px;
+    width: 50%;
+    max-width: 50%;
     margin-top: 50px;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
 }
 
 .video-text h1 {
-    font-size: 55px;
+    font-size: 3.646vw;
     font-family: 'Publica Sans';
     font-weight: 500;
 }
@@ -133,18 +140,18 @@ video {
 }
 
 .video-text p {
-    font-size: 18px;
-    margin: 15px 0px 20px;
+    font-size: 1.458vw;
+    margin: 0.781vw  0px 2.042vw;
     font-weight: 200;
     
 }
 
 .video-text a {
-    font-size: 18px;
+    font-size: 1.563vw;
     font-weight: 500;
     color: #000000;
     border-radius: 5px;
-    padding: 14px 25px;
+    padding: 0.729vw 1.302vw;
     background: #00D6A8;
 }
 
@@ -169,7 +176,7 @@ video {
 .countdown-sec p{
     color: #00D6A8;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.802vw;
     margin-bottom: 10px;
 }
 
@@ -298,6 +305,7 @@ circle {
 
 .footer p {
     margin-bottom: 15px;
+    font-size: 1.458vw;
 }
 
 .footer-icon ul {
@@ -307,9 +315,12 @@ circle {
 .footer-icon ul li {
     margin-right: 10px;
 }
+.footer-icon ul li img{
+    width: 1.5vw;
+}
 
 .footer-copright img {
-    width: 110px;
+    width: 7.729vw;
 }
 
 .footer-copright {
@@ -525,7 +536,7 @@ select:valid {
     right: 0;
     bottom: 0;
     line-height: 24px; /* Base line-height */
-    pointer-events: none; /* Ensure the checkmark doesnâ€™t block clicks */
+    pointer-events: none; /* Ensure the checkmark doesnÃ¢â‚¬â„¢t block clicks */
 }
 
 /* Optional: Focus state to make the checkbox stand out when focused */
@@ -601,32 +612,23 @@ input[type="submit"] {
     right: 0px;
 }
 .bottom-logo img{
-    width: 200px;
+    width: 14.271vw;
+    position: relative;
+        z-index: 9999;
 }
 
 
 
 
 
-@media (min-width: 1600px) and (max-width: 3000px) {
-    .logo img{
-        width: 250px;
-    }
-    .video-text h1{
-        font-size: 4.375rem;
-    }
+@media (min-width: 1600px) and (max-width: 5000px) {
    
-    .video-text p{
-        font-size: 1.75rem;
+    
+    .background-video{
+        height: 80vh;
     }
-    .bottom-logo img{
-        width: 274px;
-    }
-    .video-text{
-        max-width: 650px;
-    }
-    .video-text a{
-        font-size: 30px;
+    .video-container{
+        height: 80vh;
     }
 }
 
@@ -662,7 +664,7 @@ input[type="submit"] {
 @media only screen and (max-width: 600px) {
     .video-text {
         margin-top: 0;
-        width: 100%;
+        max-width: 100%;
     }
 
     .video-text h1 {
@@ -753,6 +755,7 @@ input[type="submit"] {
         width: 100%;
         text-align: center;
     }
+    
 
     .video-text {
         text-align: center;
