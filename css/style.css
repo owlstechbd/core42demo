@@ -122,8 +122,8 @@ video {
     max-width: 50%;
     margin-top: 50px;
     position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
+    top: 35%;
+    transform: translateY(-35%);
 }
 
 .video-text h1 {
@@ -140,9 +140,10 @@ video {
 }
 
 .video-text p {
-    font-size: 1.458vw;
-    margin: 0.781vw  0px 2.042vw;
+    font-size: 1.658vw;
+    margin: 0.781vw  0px 3vw;
     font-weight: 200;
+    line-height: 2.5vw;
     
 }
 
