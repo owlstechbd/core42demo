@@ -71,6 +71,9 @@ video {
 #mobile-video {
     display: none;
 }
+.for-desktop{
+    display: block;
+}
 
 /* Media query to switch to mobile video */
 @media only screen and (max-width: 768px) {
@@ -615,10 +618,12 @@ input[type="submit"] {
 .bottom-logo img{
     width: 14.271vw;
     position: relative;
-        z-index: 9999;
+    z-index: 9999;
 }
 
-
+.for-phone{
+    display: none;
+}
 
 
 
@@ -676,17 +681,29 @@ input[type="submit"] {
         padding-top: 10px;
         align-items: start;
         height: 20vh;
-        display: flex;
+        display: block;
         justify-content: center;
         flex-direction: column;
     }
+    .for-desktop{
+        display: none;
+    }
+    .for-phone{
+        display: block;
+    }
+    .gobal-btn{
+        margin-top: 40px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .video-text {
         margin-top: 0;
         width: 100%;
         max-width: 100%;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
     }
 
     .video-text h1 {
@@ -702,7 +719,12 @@ input[type="submit"] {
     .video-text h4 {
         font-size: 14px;
     }
-
+    .bottom-logo-phone{
+        padding: 45px 0 0;
+    }
+    .bottom-logo-phone img{
+        max-width: 160px;
+    }
     .number {
         font-size: 30px;
     }
